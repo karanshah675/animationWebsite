@@ -1,4 +1,8 @@
 /* @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap"); */
+:root{
+  --primary:#e45c26;
+  --secondary:#111;
+}
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
   margin: 0;
@@ -14,29 +18,78 @@ body {
   width: 100%;
 }
 
-/*nav bar*/
+/** nav bar */
 nav{
   position: fixed;
   display: flex;
   justify-content: space-between;
   width: 100%;
-  padding: 2vw 14vw;
-  align-items: center;
-  background-color: #e42626;
+  padding: 2vw 10.4vw;
+   height: 12vh;
+  align-items: flex-start;
+}
+nav h1 {
+    font-size: 1.6vw;
 }
 nav h4{
   font-size: 0.7vw;
   /* margin: 0.5vw; */
   font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+    margin-bottom: 2.6vw;
+}
+#nav-part1 h5 {
+    margin-bottom: 1vw;
+}
+nav h5 span{
+  /* font-size: 0.6vw; */
+  font-size: 0.75vw;
+  display: inline-block;
+  font-weight: 400;
 }
 #nav-part1{
   display: flex;
   gap: 2vw;
+  align-items: flex-start;
+  position: relative;
+  z-index: 10;
 }
+nav button{
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  background-color: var(--primary);
+   padding: 14px 20px;
+  border-radius: 50px;
+  border: 0;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.7vw;
+
+ 
+}
+nav button svg{
+  /* margin-left: 3px; */
+ 
+      height: 0.8vw;
+    
+    margin-left: 1.6vw;
+
+}
+.nav-bottom{
+  width: 79%;
+  position: absolute;
+  top: 100%;
+  height: 21vh;
+  z-index: 9;
+  background-color: #e45c26;
+}
+/** main page */
 #page1 {
   height: 100vh;
   width: 100vw;
-  background-color: #111;
+  background-color: var(--secondary);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -48,13 +101,13 @@ nav h4{
   font-weight: 600;
   line-height: 8.5vw;
 }
-/* #page1 svg{ */
+
 
 #page1 h1 svg {
   height: 6vw;
   border-radius: 50%;
   width: 6vw;
-  background-color: #e42626;
+  background-color: var(--primary);
 }
 
 #page1 p{
